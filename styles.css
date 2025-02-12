@@ -167,3 +167,15 @@ body {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.profile-pic {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
