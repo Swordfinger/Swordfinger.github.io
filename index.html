@@ -9,87 +9,103 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Work Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Welcome to My Personal Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <img src="images/profile.jpg" alt="Kevin Tao Profile Picture" style="width:150px; height:auto; border-radius:50%;">
-        <h2>About Me</h2>
-        <p>My name is Kevin Tao. I am a university student majoring in Computing Science in SFU, passionate about learning and continuously improving myself. I am proficient in Python and C++ programming and have strong communication and teamwork skills. I pay attention to detail, take initiative, and excel at problem-solving and adapting to dynamic work environments.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Kevin Tao Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>My name is Kevin Tao. I am a university student majoring in Computing Science in SFU, passionate about learning and continuously improving myself. I am proficient in Python and C++ programming and have strong communication and teamwork skills. I pay attention to detail, take initiative, and excel at problem-solving and adapting to dynamic work environments.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>My Project</h2>
-        <p>SkyFare is a project developed by our team as part of CMPT 276 in Spring 2025. It is designed to enhance the flight booking experience with smart recommendations and user-friendly UI.</p>
-        <ul>
-            <li><a href="https://github.com/CMPT-276-SPRING-2025/final-project-19-leafs.git" target="_blank">SkyFare - GitHub Repository</a></li>
-        </ul>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Project</h2>
+            <p>SkyFare is a project developed by our team as part of CMPT 276 in Spring 2025. It is designed to enhance the flight booking experience with smart recommendations and user-friendly UI.</p>
+            <ul>
+                <li><a href="https://github.com/CMPT-276-SPRING-2025/final-project-19-leafs.git" target="_blank">SkyFare - GitHub Repository</a></li>
+            </ul>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, C++</li>
-            <li>Tools: Git, GitHub, VSCode, VS Studio, Xcode</li>
-            <li>Problem Solving & Algorithms</li>
-            <li>Team Collaboration & Communication</li>
-        </ul>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C++</li>
+                <li>Tools: Git, GitHub, VSCode, VS Studio, Xcode</li>
+                <li>Problem Solving & Algorithms</li>
+                <li>Team Collaboration & Communication</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>
-                <strong>Hardware Processing - BC Tech</strong> (2019 - 2021)
-                <ul>
-                    <li>Managed and coordinated project progress to ensure timely delivery.</li>
-                    <li>Collaborated closely with team members to solve technical challenges.</li>
-                    <li>Participated in hardware product development and testing to improve product quality and user experience.</li>
-                </ul>
-            </li>
-        </ul>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Hardware Processing - BC Tech</strong> (2019 - 2021)
+                    <ul>
+                        <li>Managed and coordinated project progress to ensure timely delivery.</li>
+                        <li>Collaborated closely with team members to solve technical challenges.</li>
+                        <li>Participated in hardware product development and testing to improve product quality and user experience.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Simon Fraser University</strong> (2022 - 2026)
-                <ul>
-                    <li>Bachelor of Science in Computing Science</li>
-                    <li>Located in Vancouver, British Columbia, Canada</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Moscrop Secondary School</strong> (2016 - 2022)
-                <ul>
-                    <li>Graduated with distinction</li>
-                </ul>
-            </li>
-        </ul>
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Simon Fraser University</strong> (2022 - 2026)
+                    <ul>
+                        <li>Bachelor of Science in Computing Science</li>
+                        <li>Located in Vancouver, British Columbia, Canada</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Moscrop Secondary School</strong> (2016 - 2022)
+                    <ul>
+                        <li>Graduated with distinction</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me via:</p>
-        <ul>
-            <li><img src="images/email-icon.png" alt="Email Icon" style="width:20px; vertical-align:middle;"> Email: <a href="mailto:taokavin628@gmail.com">taokavin628@gmail.com</a></li>
-            <li><img src="images/github-icon.png" alt="GitHub Icon" style="width:20px; vertical-align:middle;"> GitHub: <a href="https://github.com/Swordfinger" target="_blank">GitHub Profile</a></li>
-        </ul>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me via:</p>
+            <ul>
+                <li><img src="images/email-icon.png" alt="Email Icon" class="icon"> Email: <a href="mailto:taokavin628@gmail.com">taokavin628@gmail.com</a></li>
+                <li><img src="images/github-icon.png" alt="GitHub Icon" class="icon"> GitHub: <a href="https://github.com/Swordfinger" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </div>
     </section>
-        
+
     <footer>
-        <p>&copy; 2025 Kevin Tao</p>
+        <div class="container">
+            <p>&copy; 2025 Kevin Tao</p>
+        </div>
     </footer>
 </body>
 </html>
