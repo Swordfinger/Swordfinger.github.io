@@ -149,3 +149,21 @@ nav ul li a:hover {
 body {
     padding-top: 70px; 
 }
+
+.section {
+    background: white;
+    padding: 30px;
+    margin: 80px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
