@@ -3,178 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kevin Tao | Computing Science Professional</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <style>
-        .hobby-img {
-            max-width: 300px;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-            border-radius: 8px;
-        }
-        .travel-gallery {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        .travel-gallery figure {
-            max-width: 300px;
-            text-align: center;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <header id="header">
         <div class="container">
-            <h1>Welcome to My Personal Website</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                <a href="#" class="logo">Kevin Tao</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#hobby">Hobbies</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section id="about" class="section">
+    <!-- Hero Section -->
+    <section id="hero">
         <div class="container">
-            <img src="images/profile.jpg" alt="Kevin Tao Profile Picture" class="profile-pic">
+            <div class="hero-content">
+                <h1>Kevin Tao</h1>
+                <h2>Computing Science Student</h2>
+                <p>A passionate Computing Science student at SFU with expertise in Python and C++, currently expanding my skills in web development. Strong problem-solver with excellent teamwork abilities.</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
             <h2>About Me</h2>
-            <p>My name is Kevin Tao. I am a university student majoring in Computing Science at SFU. Originally from Beijing, I have been studying in Canada as an international student since 2016. I am passionate about learning and continuously improving myself. I am proficient in Python and C++ programming and still studying HTML, CSS, Java, and JavaScript and have strong communication and teamwork skills. I pay attention to detail, take initiative, and excel at problem-solving and adapting to dynamic work environments. Outside of academics, I enjoy playing video games, solving Rubik’s cubes, PCs, and travelling. These hobbies challenge me, help me unwind, and inspire my curiosity about technology and the world.</p>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/500x600" alt="Kevin Tao" class="profile-img">
+                <div class="about-text">
+                    <p>My name is Kevin Tao. I am a university student majoring in Computing Science at SFU. Originally from Beijing, I have been studying in Canada as an international student since 2016. I am passionate about learning and continuously improving myself.</p>
+                    <p>I am proficient in Python and C++ programming and still studying HTML, CSS, Java, and JavaScript and have strong communication and teamwork skills. I pay attention to detail, take initiative, and excel at problem-solving and adapting to dynamic work environments.</p>
+                    <p>Outside of academics, I enjoy playing video games, solving Rubik's cubes, PCs, and travelling. These hobbies challenge me, help me unwind, and inspire my curiosity about technology and the world.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
+    <!-- Experience Section -->
+    <section id="experience">
         <div class="container">
-            <h2>My Project</h2>
-            <p>SkyFare is a project developed by our team as part of CMPT 276 in Spring 2025. It is designed to enhance the flight booking experience with smart recommendations and user-friendly UI.</p>
-            <ul>
-                <li><a href="https://github.com/CMPT-276-SPRING-2025/final-project-19-leafs.git" target="_blank">SkyFare - GitHub Repository</a></li>
-            </ul>
-            <p>Lab 1 was one of the lab assignments for CMPT276, where I looked and studied some basic git commands and made some notes. I also looked at the software development life cycle.</p>
-            <ul>
-                <li><a href="https://github.com/Swordfinger/Kaiwen-Tao-Lab-1.git" target="_blank">CMPT276 Lab 1</a></li>
-            </ul>
-            <p>Lab 2 was one of the lab assignments for CMPT276 in which I read and analyzed Chapter 2 of The Mythical Man-Month. In addition, I researched and learned more basic git commands.</p>
-            <ul>
-                <li><a href="https://github.com/Swordfinger/Kaiwen-Tao-Lab-2.git" target="_blank">CMPT276 Lab 2</a></li>
-            </ul>
-            <p>Lab 3 was one of the lab assignments for CMPT276 in which I critiqued the user interfaces of 6 websites. I also researched and learned Nielsen's 10 usability heuristics and used them for heuristic evaluation. In addition to that, I researched and learned more basic git commands. </p>
-            <ul>
-                <li><a href="https://github.com/Swordfinger/Kaiwen-Tao-Lab-3.git" target="_blank">CMPT276 Lab 3</a></li>
-            </ul>
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3>Hardware Processing - BC Tech</h3>
+                        <ul>
+                            <li>Managed and coordinated project progress to ensure timely delivery.</li>
+                            <li>Collaborated closely with team members to solve technical challenges.</li>
+                            <li>Participated in hardware product development and testing to improve product quality and user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, C++</li>
-                <li>Tools: Git, GitHub, VSCode, VS Studio, Xcode</li>
-                <li>Problem Solving & Algorithms</li>
-                <li>Team Collaboration & Communication</li>
-            </ul>
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>C++</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git/GitHub</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>VS Code</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Xcode</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Problem Solving</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Teamwork</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Communication</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="experience" class="section">
+    <!-- Projects Section -->
+    <section id="projects">
         <div class="container">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Hardware Processing - BC Tech</strong> (2019 - 2021)
-                    <ul>
-                        <li>Managed and coordinated project progress to ensure timely delivery.</li>
-                        <li>Collaborated closely with team members to solve technical challenges.</li>
-                        <li>Participated in hardware product development and testing to improve product quality and user experience.</li>
-                    </ul>
-                </li>
-            </ul>
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="SkyFare Project" class="project-img">
+                    <div class="project-info">
+                        <h3>SkyFare</h3>
+                        <p>Flight booking platform with smart recommendations and user-friendly UI developed as part of CMPT 276 course.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Team Project</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CMPT-276-SPRING-2025/final-project-19-leafs.git" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="CMPT276 Lab 1" class="project-img">
+                    <div class="project-info">
+                        <h3>CMPT276 Lab 1</h3>
+                        <p>Studied basic git commands and software development life cycle as part of coursework.</p>
+                        <div class="project-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">SDLC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Swordfinger/Kaiwen-Tao-Lab-1.git" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400" alt="CMPT276 Lab 3" class="project-img">
+                    <div class="project-info">
+                        <h3>CMPT276 Lab 3</h3>
+                        <p>Critiqued user interfaces of 6 websites using Nielsen's 10 usability heuristics.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI Evaluation</span>
+                            <span class="tag">Heuristics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Swordfinger/Kaiwen-Tao-Lab-3.git" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="education" class="section">
+    <!-- Education Section -->
+    <section id="education">
         <div class="container">
             <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Simon Fraser University</strong> (2022 - 2026)
-                    <ul>
-                        <li>Bachelor of Science in Computing Science</li>
-                        <li>Located in Vancouver, British Columbia, Canada</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Moscrop Secondary School</strong> (2016 - 2022)
-                    <ul>
-                        <li>Graduated with distinction</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Simon Fraser University</h3>
+                    <span class="education-date">2022 - 2026</span>
+                    <p>Bachelor of Science in Computing Science</p>
+                    <p>Located in Vancouver, British Columbia, Canada</p>
+                    <p><strong>Relevant Courses:</strong> Software Development Life Cycle, Algorithms, User Interface Design, Git & Version Control</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Moscrop Secondary School</h3>
+                    <span class="education-date">2016 - 2022</span>
+                    <p>Graduated with distinction</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="hobby" class="section">
+        <!-- Hobbies Section -->
+    <section id="hobby">
         <div class="container">
             <h2>Hobbies</h2>
             <h3>Video Games</h3>
             <p>I love exploring different genres of gaming, from FPS shooters like CSGO to immersive RPGs like Elden Ring. Gaming is more than just entertainment for me; it's a way to challenge myself, connect with friends, and experience great stories. In games, I am constantly looking for solutions in difficult situations and improving my problem-solving skills. At the same time, the game also allows me to practice teamwork and leadership skills, especially in multiplayer collaborative games. I learned how to effectively communicate and lead the team to achieve the goal.</p>
             
             <h3>Rubik's Cube</h3>
-            <figure><img src="images/rubiks-cube.jpg" alt="Solving a Rubik's Cube" class="hobby-img"></figure>
+            <figure>
+                <img src="images/rubiks-cube.jpg" alt="Solving a Rubik's Cube" class="hobby-img">
+            </figure>
             <p>Solving the Rubik's Cube has been my hobby since elementary school. Over time, I have challenged myself to improve my speed by learning new solutions and techniques. This process not only allows me to enjoy the sense of accomplishment in solving problems, but also develops my spirit of continuous exploration and research. The satisfaction I feel whenever I break my own record makes me love this intellectual challenge even more.</p>
             
             <h3>PC and Technology</h3>
-            <figure><img src="images/pc-hardware.jpg" alt="PC Hardware Setup" class="hobby-img"></figure>
+            <figure>
+                <img src="images/pc-hardware.jpg" alt="PC Hardware Setup" class="hobby-img">
+            </figure>
             <p>I am passionate about computers and enjoy both hardware assembly and system optimization. I like to stay up-to-date with the latest hardware trends and often invest the money I save in PC hardware (the money I saved allowed me to get my hands on ROG's RTX 4090 graphics card). This not only enhanced my gaming experience but also opened up more possibilities for technical exploration. Through continuous learning and practice, I have gradually mastered the skills of how to maximize the performance of my hardware.</p>
             
             <h3>Traveling</h3>
             <div class="travel-gallery">
                 <figure>
-                <img src="images/travel-1.jpg" alt="Travel Destination 1" class="hobby-img">
-                <figcaption>Banff, Alberta, Canada</figcaption>
-            </figure>
+                    <img src="images/travel-1.jpg" alt="Travel Destination 1" class="hobby-img">
+                    <figcaption>Banff, Alberta, Canada</figcaption>
+                </figure>
                 <figure>
-                <img src="images/travel-2.jpg" alt="Travel Destination 2" class="hobby-img">
-                <figcaption>Hangzhou, Zhejiang, China</figcaption>
-            </figure>
+                    <img src="images/travel-2.jpg" alt="Travel Destination 2" class="hobby-img">
+                    <figcaption>Hangzhou, Zhejiang, China</figcaption>
+                </figure>
                 <figure>
-                <img src="images/travel-3.jpg" alt="Travel Destination 3" class="hobby-img">
-                <figcaption>Beijing, China</figcaption>
-            </figure>
+                    <img src="images/travel-3.jpg" alt="Travel Destination 3" class="hobby-img">
+                    <figcaption>Beijing, China</figcaption>
+                </figure>
             </div>
             <p>Travelling is an integral part of my life. It gives me the opportunity to explore new places and experience different cultures and customs. Whether it's nature or cityscapes, every trip opens my eyes to the diversity of the world.</p>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>You can reach me via:</p>
-            <div class="contact-list">
-                <a href="mailto:taokavin628@gmail.com" class="contact-btn">
-                    <img src="images/email-icon.png" alt="Email Icon"> Email: taokavin628@gmail.com
-                </a>
-                <a href="https://github.com/Swordfinger" target="_blank" class="contact-btn">
-                    <img src="images/github-icon.png" alt="GitHub Icon"> GitHub: Swordfinger
-                </a>
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:taokavin628@gmail.com">taokavin628@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Swordfinger" target="_blank">github.com/Swordfinger</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Vancouver, BC, Canada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kevin Tao</p>
+            <h2>Kevin Tao</h2>
+            <p>Computing Science Student | Tech Enthusiast | Problem Solver</p>
+            <div class="social-links">
+                <a href="https://github.com/Swordfinger" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Kevin Tao. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="motion.js"></script>
 </body>
 </html>
